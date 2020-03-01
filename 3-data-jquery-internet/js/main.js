@@ -4,6 +4,9 @@ function createPersonEl(title,firstname,lastname,email) {
   return nameEl
 }
 //TODO call jQuery get function with the randomuse.me api and request 3 results
+$.get( "https://randomuser.me/api/", { 
+  results: 3 
+} )
 
   .done(function (response) {
     let personList = $(".person-api-list")[0]
